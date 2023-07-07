@@ -1,2 +1,2 @@
 # BCB_2022
-Test site for updating the BCB Course
+Code for the github pages site for the BCB Course
