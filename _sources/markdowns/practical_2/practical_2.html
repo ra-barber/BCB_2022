@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Macroecology analyses &#8212; Biodiversity and Conservation Biology</title>
   
@@ -63,13 +63,10 @@
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/copybutton_funcs.js"></script>
@@ -1089,15 +1086,15 @@ coding.</p>
 <span class="n">row_numbers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">accip_data</span><span class="p">)</span>
 
 <span class="c1"># The curly brackets show the beginning and the end of the loop.</span>
-<span class="nf">for </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">row_numbers</span><span class="p">){</span>
+<span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">row_numbers</span><span class="p">){</span>
 <span class="w">  </span>
 <span class="w">  </span><span class="c1"># Pull out the range size we want for each iteration (x) of the loop.</span>
 <span class="w">  </span><span class="n">range</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">accip_data</span><span class="o">$</span><span class="n">range_size</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
 <span class="w">  </span>
 <span class="w">  </span><span class="c1"># Calculate if it&#39;s small range or a large range.</span>
-<span class="w">  </span><span class="nf">if </span><span class="p">(</span><span class="n">range</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">1000000</span><span class="p">){</span>
+<span class="w">  </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="n">range</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">1000000</span><span class="p">){</span>
 <span class="w">    </span><span class="n">range_large</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="n">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">range_large</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span>

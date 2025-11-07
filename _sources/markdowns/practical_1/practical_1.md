@@ -1945,7 +1945,7 @@ We can try using points on the end of tips.
     ## Scale for y is already present.
     ## Adding another scale for y, which will replace the existing scale.
 
-```{image} practical_1_files/figure-gfm/Turdidae%20plot-1.png
+```{image} practical_1_files/figure-gfm/Turdidae_plot-1.png
 :align: center
 :width: 600px
 ```
@@ -1991,7 +1991,7 @@ library(ggtreeExtra)
     ## Scale for y is already present.
     ## Adding another scale for y, which will replace the existing scale.
 
-```{image} practical_1_files/figure-gfm/GG%20tree%20install-1.png
+```{image} practical_1_files/figure-gfm/GG_tree_install-1.png
 :align: center
 :width: 600px
 ```

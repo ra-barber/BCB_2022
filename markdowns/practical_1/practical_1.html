@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Basics &amp; Phylogenetics in R &#8212; Biodiversity and Conservation Biology</title>
   
@@ -63,13 +63,10 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/copybutton_funcs.js"></script>
@@ -1921,7 +1918,7 @@ package produces really nice plots you can use for coursework
 assignments.</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load ggtree for plotting phylogenies.</span>
 
-<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
+<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
 <span class="w">    </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">)</span>
 
 <span class="c1">#BiocManager::install(&quot;ggtree&quot;)</span>
@@ -2066,7 +2063,7 @@ the tree than habitat?</p>
 ## Adding another scale for y, which will replace the existing scale.
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="markdowns/practical_1/practical_1_files/figure-gfm/Turdidae%20plot-1.png"><img alt="markdowns/practical_1/practical_1_files/figure-gfm/Turdidae%20plot-1.png" class="align-center" src="markdowns/practical_1/practical_1_files/figure-gfm/Turdidae%20plot-1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Turdidae_plot-1.png"><img alt="../../_images/Turdidae_plot-1.png" class="align-center" src="../../_images/Turdidae_plot-1.png" style="width: 600px;" /></a>
 <p>Notice how we use <code class="docutils literal notranslate"><span class="pre">open.angle</span> <span class="pre">=</span> <span class="pre">15</span></code> so that we can fit the legend in the
 gap. Think how you can play around with the size of each part of the
 plot to make it look nicer!</p>
@@ -2075,7 +2072,7 @@ plot to make it look nicer!</p>
 <p class="admonition-title">Show the answer…  </p>
 <p>Or we can use bars. Maybe we could add clade labels after?</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the ggtree extra package for adding plots to circular trees.</span>
-<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
+<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
 <span class="w">    </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">)</span>
 
 <span class="c1">#BiocManager::install(&quot;ggtreeExtra&quot;)</span>
@@ -2104,7 +2101,7 @@ plot to make it look nicer!</p>
 ## Adding another scale for y, which will replace the existing scale.
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="markdowns/practical_1/practical_1_files/figure-gfm/GG%20tree%20install-1.png"><img alt="markdowns/practical_1/practical_1_files/figure-gfm/GG%20tree%20install-1.png" class="align-center" src="markdowns/practical_1/practical_1_files/figure-gfm/GG%20tree%20install-1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/GG_tree_install-1.png"><img alt="../../_images/GG_tree_install-1.png" class="align-center" src="../../_images/GG_tree_install-1.png" style="width: 600px;" /></a>
 <p>Geom fruit can be confusing as we have the y value as the node, and x as
 our variable, but this code can easily be subbed in with your own data.</p>
 <p>This guide goes into lots of detail plotting with ggtree, and is worth
