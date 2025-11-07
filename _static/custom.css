@@ -1,23 +1,48 @@
-/* Simplify admonitions and dropdowns */
-.admonition, details {
-  border-left: 3px solid #0072B2 !important;
-  background-color: #f8f9fa !important;
+/* --- Classic Jupyter Book style admonitions --- */
+.admonition {
+  border-left: 4px solid #009E73 !important;
+  background-color: #f8f8f8 !important;
+  color: #000 !important;
   box-shadow: none !important;
-  margin-top: 1em;
-  margin-bottom: 1em;
   padding: 0.8em 1em !important;
+  margin: 1em 0 !important;
   border-radius: 4px !important;
 }
 
-.admonition-title, summary {
+/* Title bar simplified */
+.admonition .admonition-title,
+.admonition .admonition-title:before {
   background: none !important;
   border: none !important;
+  color: #009E73 !important;
   font-weight: 600 !important;
-  color: #0072B2 !important;
+  content: none !important;   /* remove FontAwesome icons */
 }
 
-/* Make dropdown icons lighter and tighter */
-details summary::marker,
-details summary::before {
+/* Specific colours for types */
+.admonition.tip,
+.admonition.hint {
+  border-left-color: #009E73 !important;
+}
+.admonition.warning,
+.admonition.attention {
+  border-left-color: #D55E00 !important;
+}
+.admonition.note,
+.admonition.important {
+  border-left-color: #0072B2 !important;
+}
+
+/* Dropdown (details) clean style */
+details {
+  border-left: 4px solid #0072B2 !important;
+  background-color: #f8f8f8 !important;
+  padding: 0.8em 1em !important;
+  border-radius: 4px !important;
+  margin: 1em 0 !important;
+}
+details summary {
   color: #0072B2 !important;
+  font-weight: 600 !important;
+  cursor: pointer;
 }
