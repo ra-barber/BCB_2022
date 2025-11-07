@@ -1,0 +1,13 @@
+/* Kill dark mode */
+html[data-theme="dark"],
+body[data-theme="dark"] {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Hide any theme switch buttons if present */
+button.theme-switch-button,
+.bd-topbar .theme-switch-button,
+.navbar-item .theme-switch-button {
+  display: none !important;
+}
