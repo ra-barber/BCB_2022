@@ -1,0 +1,11 @@
+# Book settings
+title: Biodiversity and Conservation Biology
+
+# Author details
+author: Robert Barber
+
+# Force light mode to avoid dark/light theme conflicts
+sphinx:
+  config:
+    html_theme_options:
+      default_mode: light

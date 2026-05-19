@@ -1,0 +1,43 @@
+name: Build and Deploy Jupyter Book
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install Jupyter Book
+        run: pip install jupyter-book==0.15.1
+
+      - name: Prepare image directories
+        run: |
+          mkdir -p markdowns/practical_1/practical_1_files/figure-gfm
+          mkdir -p markdowns/practical_2/practical_2_files/figure-gfm
+          mkdir -p markdowns/practical_3/practical_3_files/figure-gfm
+          cp _images/*.png markdowns/practical_1/practical_1_files/figure-gfm/ 2>/dev/null || true
+          cp _images/*.png markdowns/practical_2/practical_2_files/figure-gfm/ 2>/dev/null || true
+          cp _images/*.png markdowns/practical_3/practical_3_files/figure-gfm/ 2>/dev/null || true
+
+      - name: Build Jupyter Book
+        run: jupyter-book build .
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html
+          publish_branch: gh-pages
+          force_orphan: true
