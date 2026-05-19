@@ -13,6 +13,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Force reset gh-pages to last working commit (7174c74)
+      - name: Force reset gh-pages to last working commit
         run: |
+          # Reset to 7174c74402fca0dfde033c82273d96bfb8a66eae — the initial
+          # "Update documentation" build, before the Jupyter Books update broke the site.
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git push origin 7174c74402fca0dfde033c82273d96bfb8a66eae:refs/heads/gh-pages --force
