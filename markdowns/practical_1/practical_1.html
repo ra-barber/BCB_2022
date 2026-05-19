@@ -3,19 +3,19 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" data-theme="light">
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Basics &amp; Phylogenetics in R &#8212; Biodiversity and Conservation Biology</title>
+    <title>Basics &amp; Phylogenetics in R &#8212; Biodiversity and  &lt;br/&gt;Conservation Biology</title>
   
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
@@ -37,25 +37,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/force_light.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.e2363ea40746bee74734a24ffefccd78.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/force_light.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
@@ -81,33 +62,18 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/copybutton_funcs.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/force_light.js"></script>
-    <script src="../../_static/jquery-3.5.1.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script src="../../_static/searchtools.js"></script>
-    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="../../_static/sphinx-thebe.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
-    <script src="../../_static/underscore-1.13.1.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-    <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/copybutton_funcs.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/force_light.js"></script>
     <script src="../../_static/jquery-3.5.1.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/language_data.js"></script>
@@ -137,7 +103,7 @@ const thebe_selector_output = ".output, .cell_output"
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
   
@@ -219,7 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    <p class="title logo__title">Biodiversity and Conservation Biology</p>
+    <p class="title logo__title">Biodiversity and  <br/>Conservation Biology</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -1954,7 +1920,7 @@ package produces really nice plots you can use for coursework
 assignments.</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load ggtree for plotting phylogenies.</span>
 
-<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
 <span class="w">    </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">)</span>
 
 <span class="c1">#BiocManager::install(&quot;ggtree&quot;)</span>
@@ -2099,7 +2065,7 @@ the tree than habitat?</p>
 ## Adding another scale for y, which will replace the existing scale.
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/Turdidae_plot-1.png"><img alt="../../_images/Turdidae_plot-1.png" class="align-center" src="../../_images/Turdidae_plot-1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="markdowns/practical_1/practical_1_files/figure-gfm/Turdidae%20plot-1.png"><img alt="markdowns/practical_1/practical_1_files/figure-gfm/Turdidae%20plot-1.png" class="align-center" src="markdowns/practical_1/practical_1_files/figure-gfm/Turdidae%20plot-1.png" style="width: 600px;" /></a>
 <p>Notice how we use <code class="docutils literal notranslate"><span class="pre">open.angle</span> <span class="pre">=</span> <span class="pre">15</span></code> so that we can fit the legend in the
 gap. Think how you can play around with the size of each part of the
 plot to make it look nicer!</p>
@@ -2108,7 +2074,7 @@ plot to make it look nicer!</p>
 <p class="admonition-title">Show the answer…  </p>
 <p>Or we can use bars. Maybe we could add clade labels after?</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the ggtree extra package for adding plots to circular trees.</span>
-<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">quietly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span>
 <span class="w">    </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">)</span>
 
 <span class="c1">#BiocManager::install(&quot;ggtreeExtra&quot;)</span>
@@ -2137,7 +2103,7 @@ plot to make it look nicer!</p>
 ## Adding another scale for y, which will replace the existing scale.
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/GG_tree_install-1.png"><img alt="../../_images/GG_tree_install-1.png" class="align-center" src="../../_images/GG_tree_install-1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="markdowns/practical_1/practical_1_files/figure-gfm/GG%20tree%20install-1.png"><img alt="markdowns/practical_1/practical_1_files/figure-gfm/GG%20tree%20install-1.png" class="align-center" src="markdowns/practical_1/practical_1_files/figure-gfm/GG%20tree%20install-1.png" style="width: 600px;" /></a>
 <p>Geom fruit can be confusing as we have the y value as the node, and x as
 our variable, but this code can easily be subbed in with your own data.</p>
 <p>This guide goes into lots of detail plotting with ggtree, and is worth
